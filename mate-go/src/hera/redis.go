@@ -1,9 +1,10 @@
-package redis
+package hera
 
 import (
 	"fmt"
-	"github.com/garyburd/redigo/redis"
 	"time"
+
+	"github.com/garyburd/redigo/redis"
 )
 
 type RedisSvc struct {
@@ -19,7 +20,7 @@ var redisConnection *redis.Pool = nil
 func NewRedisSvc() {
 	Redis = &RedisSvc{
 		connType: "tcp",
-		ip:       "redis.demo.1360.com",
+		ip:       "192.168.1.182",
 		port:     "6379",
 		db:       "1",
 	}
