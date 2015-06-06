@@ -9,6 +9,7 @@ echo $GOPATH
 echo $GOBIN
 
 go get github.com/garyburd/redigo/redis
+
 go install main
 
 exec  /gopath/app/team-3GGs/mate-go/bin/main
