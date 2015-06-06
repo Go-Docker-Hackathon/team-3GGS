@@ -52,7 +52,7 @@ func String(reply interface{}, err error) (string, error) {
 	return redis.String(reply, err)
 }
 
-func (this *RedisSvc) Do(cmd string, args ...interface{}) (interface{}, error) {
+func (this *RedisSvc) DoCmd(cmd string, args ...interface{}) (interface{}, error) {
 	enablePool := true
 	var c redis.Conn
 	var err error
