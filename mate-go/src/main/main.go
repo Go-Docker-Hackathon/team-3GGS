@@ -20,7 +20,7 @@ func initEnv() {
 	os.Chdir(path.Dir(os.Args[0]))
 	config := hera.NewConfig("../conf/mate.yaml")
 	hera.MakeServerVar(config)
-	hera.NewLogger("hera", hera.LevelDebug)
+	hera.NewLogger(hera.SERVER["LOG_PATH"], hera.LevelDebug)
 	hera.NewRedisSvc()
 }
 

@@ -19,6 +19,8 @@ func (this *HelloREST) Get(c *hera.Context) error {
 			data += "key[" + p_key + "]=" + p_value + " " + hera.SERVER["HELLO"]
 		}
 	}
+
+	hera.Logger.Info("have sucess vistited Hello::Get() interface")
 	return c.Success("access-data:" + data)
 }
 
