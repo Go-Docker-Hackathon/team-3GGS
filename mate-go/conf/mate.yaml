@@ -1,18 +1,20 @@
 #!import "./module.yaml"
 
-__mode : "online"
+__mode : "dev"
 
 resuable : 
     USER : "neoduan"
-    HELLO : "myhello"
-    PRJ_ROOT : "/home/q/system/hera"
+    PRJ_NAME : "mate"
+    PRJ_ROOT : "~/devspace/mate"
     LIST :
-        - "fdaf" : "fdfa"
-        - "hleo" : "df"
-        - "li2" : "dfdfd"
+        - "devp1" : "yangwum"
+        - "devp2" : "zhengy"
+        - "devp3" : "neoduan"
 
 dev :
-    DB_NAME : "hera_dev_db"
+    DB_NAME : "192.168.1.168"
+    DB_PORT : "6379"
+    DB_NO   : "1"
     DB_USER : "dev"
     DB_PWD  : "dev_pwd"
 

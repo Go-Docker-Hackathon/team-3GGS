@@ -20,9 +20,9 @@ var redisConnection *redis.Pool = nil
 func NewRedisSvc() {
 	Redis = &RedisSvc{
 		connType: "tcp",
-		ip:       "192.168.1.182",
-		port:     "6379",
-		db:       "1",
+		ip:       SERVER["DB_NAME"],
+		port:     SERVER["DB_PORT"],
+		db:       SERVER["DB_NO"],
 	}
 }
 

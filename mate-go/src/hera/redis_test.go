@@ -7,6 +7,6 @@ import (
 
 func TestDofunc(t *testing.T) {
 	NewRedisSvc()
-	tmp, _ := Redis.DoCmd("GET", "uid")
-	fmt.Printf("%v", tmp)
+	tmp, _ := Redis.DoCmd("smembers", "userid")
+	fmt.Printf("%s", tmp)
 }
