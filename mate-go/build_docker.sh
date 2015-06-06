@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT_DIR=`pwd`
+ROOT_DIR="/gopath/app/team-3GGS/mate-go"
 cd $ROOT_DIR
 export GOPATH=$ROOT_DIR
 export GOBIN=$GOPATH/bin
@@ -12,5 +12,4 @@ go get github.com/garyburd/redigo/redis
 
 go install main
 
-exec ./bin/main
-
+exec  /gopath/app/team-3GGS/mate-go/bin/main

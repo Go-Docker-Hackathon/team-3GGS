@@ -56,13 +56,20 @@ func Strings(reply interface{}, err error) ([]string, error) {
 	return redis.Strings(reply, err)
 }
 
-
 func (this *RedisSvc) DoCmd(cmd string, args ...interface{}) (interface{}, error) {
 	enablePool := true
 	var c redis.Conn
 	var err error
 	if enablePool {
+
 		c = this.getRedisPool()
+
+		if SERVER["DB_PWD"] != "" {
+			_, err = c.Do("AUTH", SERVER["DB_PWD"])
+			if err != nil {
+				panic(err)
+			}
+		}
 	} else {
 		c, err = redis.Dial(this.connType, fmt.Sprintf("%s:%s", this.ip, this.port))
 		if err != nil {
