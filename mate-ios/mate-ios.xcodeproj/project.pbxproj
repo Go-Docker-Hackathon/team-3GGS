@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		568285F31B22AF5800152BFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568285F21B22AF5800152BFA /* Foundation.framework */; };
+		568285F51B22AF5800152BFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568285F41B22AF5800152BFA /* CoreGraphics.framework */; };
+		568285F71B22AF5800152BFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568285F61B22AF5800152BFA /* UIKit.framework */; };
+		568285FD1B22AF5800152BFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 568285FB1B22AF5800152BFA /* InfoPlist.strings */; };
+		568285FF1B22AF5800152BFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 568285FE1B22AF5800152BFA /* main.m */; };
+		568286031B22AF5800152BFA /* xcodecraftAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 568286021B22AF5800152BFA /* xcodecraftAppDelegate.m */; };
+		568286061B22AF5800152BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568286041B22AF5800152BFA /* Main.storyboard */; };
+		568286091B22AF5800152BFA /* xcodecraftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568286081B22AF5800152BFA /* xcodecraftViewController.m */; };
+		5682860B1B22AF5800152BFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5682860A1B22AF5800152BFA /* Images.xcassets */; };
+		568286121B22AF5800152BFA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568286111B22AF5800152BFA /* XCTest.framework */; };
+		568286131B22AF5800152BFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568285F21B22AF5800152BFA /* Foundation.framework */; };
+		568286141B22AF5800152BFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568285F61B22AF5800152BFA /* UIKit.framework */; };
+		5682861C1B22AF5800152BFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5682861A1B22AF5800152BFA /* InfoPlist.strings */; };
+		5682861E1B22AF5800152BFA /* mate_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5682861D1B22AF5800152BFA /* mate_iosTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		568286151B22AF5800152BFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 568285E71B22AF5800152BFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 568285EE1B22AF5800152BFA;
+			remoteInfo = "mate-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		568285EF1B22AF5800152BFA /* mate-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mate-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		568285F21B22AF5800152BFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		568285F41B22AF5800152BFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		568285F61B22AF5800152BFA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		568285FA1B22AF5800152BFA /* mate-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mate-ios-Info.plist"; sourceTree = "<group>"; };
+		568285FC1B22AF5800152BFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		568285FE1B22AF5800152BFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		568286001B22AF5800152BFA /* mate-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mate-ios-Prefix.pch"; sourceTree = "<group>"; };
+		568286011B22AF5800152BFA /* xcodecraftAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xcodecraftAppDelegate.h; sourceTree = "<group>"; };
+		568286021B22AF5800152BFA /* xcodecraftAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xcodecraftAppDelegate.m; sourceTree = "<group>"; };
+		568286051B22AF5800152BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		568286071B22AF5800152BFA /* xcodecraftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xcodecraftViewController.h; sourceTree = "<group>"; };
+		568286081B22AF5800152BFA /* xcodecraftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xcodecraftViewController.m; sourceTree = "<group>"; };
+		5682860A1B22AF5800152BFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		568286101B22AF5800152BFA /* mate-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mate-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		568286111B22AF5800152BFA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		568286191B22AF5800152BFA /* mate-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mate-iosTests-Info.plist"; sourceTree = "<group>"; };
+		5682861B1B22AF5800152BFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5682861D1B22AF5800152BFA /* mate_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mate_iosTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		568285EC1B22AF5800152BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568285F51B22AF5800152BFA /* CoreGraphics.framework in Frameworks */,
+				568285F71B22AF5800152BFA /* UIKit.framework in Frameworks */,
+				568285F31B22AF5800152BFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5682860D1B22AF5800152BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568286121B22AF5800152BFA /* XCTest.framework in Frameworks */,
+				568286141B22AF5800152BFA /* UIKit.framework in Frameworks */,
+				568286131B22AF5800152BFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		568285E61B22AF5800152BFA = {
+			isa = PBXGroup;
+			children = (
+				568285F81B22AF5800152BFA /* mate-ios */,
+				568286171B22AF5800152BFA /* mate-iosTests */,
+				568285F11B22AF5800152BFA /* Frameworks */,
+				568285F01B22AF5800152BFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		568285F01B22AF5800152BFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				568285EF1B22AF5800152BFA /* mate-ios.app */,
+				568286101B22AF5800152BFA /* mate-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		568285F11B22AF5800152BFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				568285F21B22AF5800152BFA /* Foundation.framework */,
+				568285F41B22AF5800152BFA /* CoreGraphics.framework */,
+				568285F61B22AF5800152BFA /* UIKit.framework */,
+				568286111B22AF5800152BFA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		568285F81B22AF5800152BFA /* mate-ios */ = {
+			isa = PBXGroup;
+			children = (
+				568286011B22AF5800152BFA /* xcodecraftAppDelegate.h */,
+				568286021B22AF5800152BFA /* xcodecraftAppDelegate.m */,
+				568286041B22AF5800152BFA /* Main.storyboard */,
+				568286071B22AF5800152BFA /* xcodecraftViewController.h */,
+				568286081B22AF5800152BFA /* xcodecraftViewController.m */,
+				5682860A1B22AF5800152BFA /* Images.xcassets */,
+				568285F91B22AF5800152BFA /* Supporting Files */,
+			);
+			path = "mate-ios";
+			sourceTree = "<group>";
+		};
+		568285F91B22AF5800152BFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				568285FA1B22AF5800152BFA /* mate-ios-Info.plist */,
+				568285FB1B22AF5800152BFA /* InfoPlist.strings */,
+				568285FE1B22AF5800152BFA /* main.m */,
+				568286001B22AF5800152BFA /* mate-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		568286171B22AF5800152BFA /* mate-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				5682861D1B22AF5800152BFA /* mate_iosTests.m */,
+				568286181B22AF5800152BFA /* Supporting Files */,
+			);
+			path = "mate-iosTests";
+			sourceTree = "<group>";
+		};
+		568286181B22AF5800152BFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				568286191B22AF5800152BFA /* mate-iosTests-Info.plist */,
+				5682861A1B22AF5800152BFA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		568285EE1B22AF5800152BFA /* mate-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 568286211B22AF5800152BFA /* Build configuration list for PBXNativeTarget "mate-ios" */;
+			buildPhases = (
+				568285EB1B22AF5800152BFA /* Sources */,
+				568285EC1B22AF5800152BFA /* Frameworks */,
+				568285ED1B22AF5800152BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mate-ios";
+			productName = "mate-ios";
+			productReference = 568285EF1B22AF5800152BFA /* mate-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5682860F1B22AF5800152BFA /* mate-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 568286241B22AF5800152BFA /* Build configuration list for PBXNativeTarget "mate-iosTests" */;
+			buildPhases = (
+				5682860C1B22AF5800152BFA /* Sources */,
+				5682860D1B22AF5800152BFA /* Frameworks */,
+				5682860E1B22AF5800152BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				568286161B22AF5800152BFA /* PBXTargetDependency */,
+			);
+			name = "mate-iosTests";
+			productName = "mate-iosTests";
+			productReference = 568286101B22AF5800152BFA /* mate-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		568285E71B22AF5800152BFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = xcodecraft;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = xcodecraft;
+				TargetAttributes = {
+					5682860F1B22AF5800152BFA = {
+						TestTargetID = 568285EE1B22AF5800152BFA;
+					};
+				};
+			};
+			buildConfigurationList = 568285EA1B22AF5800152BFA /* Build configuration list for PBXProject "mate-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 568285E61B22AF5800152BFA;
+			productRefGroup = 568285F01B22AF5800152BFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				568285EE1B22AF5800152BFA /* mate-ios */,
+				5682860F1B22AF5800152BFA /* mate-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		568285ED1B22AF5800152BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5682860B1B22AF5800152BFA /* Images.xcassets in Resources */,
+				568285FD1B22AF5800152BFA /* InfoPlist.strings in Resources */,
+				568286061B22AF5800152BFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5682860E1B22AF5800152BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5682861C1B22AF5800152BFA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		568285EB1B22AF5800152BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568286091B22AF5800152BFA /* xcodecraftViewController.m in Sources */,
+				568285FF1B22AF5800152BFA /* main.m in Sources */,
+				568286031B22AF5800152BFA /* xcodecraftAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5682860C1B22AF5800152BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5682861E1B22AF5800152BFA /* mate_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		568286161B22AF5800152BFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 568285EE1B22AF5800152BFA /* mate-ios */;
+			targetProxy = 568286151B22AF5800152BFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		568285FB1B22AF5800152BFA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				568285FC1B22AF5800152BFA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		568286041B22AF5800152BFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				568286051B22AF5800152BFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5682861A1B22AF5800152BFA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5682861B1B22AF5800152BFA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5682861F1B22AF5800152BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		568286201B22AF5800152BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		568286221B22AF5800152BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mate-ios/mate-ios-Prefix.pch";
+				INFOPLIST_FILE = "mate-ios/mate-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		568286231B22AF5800152BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mate-ios/mate-ios-Prefix.pch";
+				INFOPLIST_FILE = "mate-ios/mate-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		568286251B22AF5800152BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mate-ios.app/mate-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mate-ios/mate-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "mate-iosTests/mate-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		568286261B22AF5800152BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mate-ios.app/mate-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mate-ios/mate-ios-Prefix.pch";
+				INFOPLIST_FILE = "mate-iosTests/mate-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		568285EA1B22AF5800152BFA /* Build configuration list for PBXProject "mate-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5682861F1B22AF5800152BFA /* Debug */,
+				568286201B22AF5800152BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		568286211B22AF5800152BFA /* Build configuration list for PBXNativeTarget "mate-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				568286221B22AF5800152BFA /* Debug */,
+				568286231B22AF5800152BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		568286241B22AF5800152BFA /* Build configuration list for PBXNativeTarget "mate-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				568286251B22AF5800152BFA /* Debug */,
+				568286261B22AF5800152BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 568285E71B22AF5800152BFA /* Project object */;
+}
