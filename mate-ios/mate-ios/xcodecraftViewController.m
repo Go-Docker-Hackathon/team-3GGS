@@ -9,6 +9,7 @@
 #import "xcodecraftViewController.h"
 
 @interface xcodecraftViewController ()
+- (IBAction)login:(id)sender;
 
 @end
 
@@ -26,4 +27,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)login:(id)sender {
+    
+    [[[UIAlertView alloc]initWithTitle:@"title" message:@"登录成功" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil]show];
+}
 @end
