@@ -1,6 +1,6 @@
 #!import "./module.yaml"
 
-__mode : "dev"
+__mode : "online"
 
 resuable : 
     USER : "neoduan"
