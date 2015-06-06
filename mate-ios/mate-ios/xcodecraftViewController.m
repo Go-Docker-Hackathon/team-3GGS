@@ -7,6 +7,7 @@
 //
 
 #import "xcodecraftViewController.h"
+#import "MateViewController.h"
 
 @interface xcodecraftViewController ()
 - (IBAction)login:(id)sender;
@@ -29,6 +30,11 @@
 
 - (IBAction)login:(id)sender {
     
-    [[[UIAlertView alloc]initWithTitle:@"title" message:@"登录成功" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil]show];
+    // [[[UIAlertView alloc]initWithTitle:@"title" message:@"登录成功" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil]show];
+    
+    MateViewController *controller = [[ MateViewController alloc] initWithNibName:@"MateViewController" bundle:nil];
+    controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:controller animated:YES completion:nil];
+    
 }
 @end
