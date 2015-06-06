@@ -29,6 +29,7 @@ func (this *UserREST) Login(c *hera.Context) error {
 func (this *UserREST) MateList(c *hera.Context) error {
 	params := c.Params
 	phone_number :=  params["phone_number"]
+	fmt.Println("[info] MatezList: "+ phone_number )
 	ret := MatchAlgorithm(phone_number)
 
 	return c.Success(ret)
@@ -38,16 +39,12 @@ func (this *UserREST) MatedList(c *hera.Context) error {
 	params := c.Params
 	phone_number :=  params["phone_number"]
 	
-	ret , err :=hera.Redis.DoCmd("smembers", "like_" + phone_number)
+	ret , err :=hera.Strings(hera.Redis.DoCmd("smembers", "like_" + phone_number))
 	if err != nil {
 		fmt.Println("[warn] sadd  userid error, value: "+ phone_number )
 	}
 
-	value, _ := ret.([]string)
-//	arr :=  []int{1,2,3}
-	//todo get userinfo
-	fmt.Printf("%s", ret)
-	return c.Success(value)
+	return c.Success(ret)
 }
 
 //curl 'localhost:8083/Hello/Set?fd=123'
