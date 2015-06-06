@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ROOT_DIR=`pwd`
 export GOPATH=$ROOT_DIR
 export GOBIN=$GOPATH/bin
