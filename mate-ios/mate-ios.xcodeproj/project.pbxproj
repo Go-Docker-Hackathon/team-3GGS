@@ -61,7 +61,6 @@
 		5642D27C1B2308C800DC206C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5642D27E1B2308E900DC206C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5642D2801B23094C00DC206C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		5642D2821B23098F00DC206C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		566A3A9E1B2310C0002FBE31 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		566A3B241B231553002FBE31 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		566A3B251B231553002FBE31 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
@@ -229,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				566A3A9E1B2310C0002FBE31 /* libz.1.2.5.dylib */,
-				5642D2821B23098F00DC206C /* libz.dylib */,
 				5642D2801B23094C00DC206C /* MobileCoreServices.framework */,
 				5642D27E1B2308E900DC206C /* SystemConfiguration.framework */,
 				5642D27C1B2308C800DC206C /* CFNetwork.framework */,

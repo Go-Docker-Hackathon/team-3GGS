@@ -33,7 +33,7 @@
     
     // [[[UIAlertView alloc]initWithTitle:@"title" message:@"登录成功" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil]show];
     
-    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com/search/error.html"];
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8083/Hello/Get?fd=123'"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request startSynchronous];
     NSError *error = [request error];
@@ -45,7 +45,7 @@
     
     MateViewController *controller = [[ MateViewController alloc] initWithNibName:@"MateViewController" bundle:nil];
     controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:controller animated:YES completion:nil];
+    [self presentViewController:controller animated:YES completion:nil]; /**/
     
 }
 @end
