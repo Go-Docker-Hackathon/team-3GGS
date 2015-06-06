@@ -10,4 +10,4 @@ RUN git clone https://github.com/Go-Docker-Hackathon/team-3GGS.git
 
 ENTRYPOINT ["/bin/bash","/gopath/app/team-3GGS/mate-go/build.sh"]
 
-EXPOSE 8083
+EXPOSE 80
