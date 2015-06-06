@@ -2,9 +2,10 @@ package hera
 
 import (
 	"fmt"
-	"log/syslog"
 	"net/http"
 	"time"
+	"log"
+	"os"
 )
 
 var Logger *XLogger = nil
@@ -20,10 +21,10 @@ const (
 type XLogger struct {
 	logName   string
 	logLevel  int
-	logWriter *syslog.Writer
+	logWriter *log.Logger
 }
 
-func NewLogger(logName string, logLevel int) *XLogger {
+func NewLogger(logName string, logLevel int) *XLogger{
 	if Logger == nil {
 		Logger = &XLogger{}
 		Logger.Init(logName, LevelDebug)
@@ -37,12 +38,18 @@ func (this *XLogger) Init(logName string, logLevel int) {
 	this.logWriter = getWriter(logName)
 }
 
-func getWriter(logName string) *syslog.Writer {
-	writer, _ := syslog.New(syslog.LOG_INFO|syslog.LOG_LOCAL6, logName)
-	return writer
+func getWriter(logName string) *log.Logger {
+	f, err := os.OpenFile(logName, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	if err != nil{
+		log.Fatalf("error opening file: %v", err)
+	}
+	var prefix string = "meta"
+
+	writer := log.New(f, prefix, log.LstdFlags)
+	return writer  
 }
 
-func (this *XLogger) Logger() *syslog.Writer {
+func (this *XLogger) Logger() *log.Logger{
 	if this.logName == "" {
 		panic("XLogger log name missing")
 	}
@@ -54,22 +61,22 @@ func (this *XLogger) Logger() *syslog.Writer {
 
 func (this *XLogger) Debug(str string) {
 	if this.logLevel <= LevelDebug {
-		this.Logger().Info(" [debug] " + str)
+		this.Logger().Println(" [debug] " + str)
 	}
 }
 func (this *XLogger) Info(str string) {
 	if this.logLevel <= LevelInfo {
-		this.Logger().Info(" [info] " + str)
+		this.Logger().Println(" [info] " + str)
 	}
 }
 func (this *XLogger) Warn(str string) {
 	if this.logLevel <= LevelWarn {
-		this.Logger().Info(" [warn] " + str)
+		this.Logger().Println(" [warn] " + str)
 	}
 }
 func (this *XLogger) Error(str string) {
 	if this.logLevel <= LevelError {
-		this.Logger().Info(" [error] " + str)
+		this.Logger().Println(" [error] " + str)
 	}
 }
 
