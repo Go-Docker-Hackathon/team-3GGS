@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5642D2591B22F6E200DC206C /* MateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5642D2571B22F6E200DC206C /* MateViewController.m */; };
+		5642D25A1B22F6E200DC206C /* MateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5642D2581B22F6E200DC206C /* MateViewController.xib */; };
 		568285F31B22AF5800152BFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568285F21B22AF5800152BFA /* Foundation.framework */; };
 		568285F51B22AF5800152BFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568285F41B22AF5800152BFA /* CoreGraphics.framework */; };
 		568285F71B22AF5800152BFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568285F61B22AF5800152BFA /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5642D2561B22F6E200DC206C /* MateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MateViewController.h; sourceTree = "<group>"; };
+		5642D2571B22F6E200DC206C /* MateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MateViewController.m; sourceTree = "<group>"; };
+		5642D2581B22F6E200DC206C /* MateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MateViewController.xib; sourceTree = "<group>"; };
 		568285EF1B22AF5800152BFA /* mate-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mate-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		568285F21B22AF5800152BFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		568285F41B22AF5800152BFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +117,9 @@
 		568285F81B22AF5800152BFA /* mate-ios */ = {
 			isa = PBXGroup;
 			children = (
+				5642D2561B22F6E200DC206C /* MateViewController.h */,
+				5642D2571B22F6E200DC206C /* MateViewController.m */,
+				5642D2581B22F6E200DC206C /* MateViewController.xib */,
 				568286011B22AF5800152BFA /* xcodecraftAppDelegate.h */,
 				568286021B22AF5800152BFA /* xcodecraftAppDelegate.m */,
 				568286041B22AF5800152BFA /* Main.storyboard */,
@@ -232,6 +240,7 @@
 				5682860B1B22AF5800152BFA /* Images.xcassets in Resources */,
 				568285FD1B22AF5800152BFA /* InfoPlist.strings in Resources */,
 				568286061B22AF5800152BFA /* Main.storyboard in Resources */,
+				5642D25A1B22F6E200DC206C /* MateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5642D2591B22F6E200DC206C /* MateViewController.m in Sources */,
 				568286091B22AF5800152BFA /* xcodecraftViewController.m in Sources */,
 				568285FF1B22AF5800152BFA /* main.m in Sources */,
 				568286031B22AF5800152BFA /* xcodecraftAppDelegate.m in Sources */,
@@ -457,6 +467,7 @@
 				568286231B22AF5800152BFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		568286241B22AF5800152BFA /* Build configuration list for PBXNativeTarget "mate-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +476,7 @@
 				568286261B22AF5800152BFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
