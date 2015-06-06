@@ -1,1 +1,3 @@
 mate-go/src/github.com/
+mate-go/bin/
+mate-go/pkg/
