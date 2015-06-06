@@ -46,7 +46,6 @@ func getWriter(logName string) *log.Logger {
 	var prefix string = "meta"
 
 	writer := log.New(f, prefix, log.LstdFlags)
-	fmt.Printf("%#v\n",writer)
 	return writer  
 }
 
