@@ -8,6 +8,7 @@
 
 #import "xcodecraftViewController.h"
 #import "MateViewController.h"
+#import "ASIHTTPRequest.h"
 
 @interface xcodecraftViewController ()
 - (IBAction)login:(id)sender;
@@ -31,6 +32,16 @@
 - (IBAction)login:(id)sender {
     
     // [[[UIAlertView alloc]initWithTitle:@"title" message:@"登录成功" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil]show];
+    
+    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com/search/error.html"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request startSynchronous];
+    NSError *error = [request error];
+    if (!error) {
+        NSString *response = [request responseString];
+        NSLog(response);
+        //[[[UIAlertView alloc]initWithTitle:@"title" message:@"登录成功" delegate:nil cancelButtonTitle:response otherButtonTitles:nil, nil]show];
+    }
     
     MateViewController *controller = [[ MateViewController alloc] initWithNibName:@"MateViewController" bundle:nil];
     controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
