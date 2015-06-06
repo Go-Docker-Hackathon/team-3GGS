@@ -8,7 +8,7 @@ ADD . /gopath/app/
 
 RUN git clone https://github.com/Go-Docker-Hackathon/team-3GGS.git
 RUN cd ./team-3GGS/mate-go/
-ENTRYPOINT ["/gopath/app/team-3GGS/mate-go/build.sh"]
+RUN ./build.sh
 
 EXPOSE 8083
-CMD ["/gopath/app/team-3GGS/mate-go/bin/main"]
+ENTRYPOINT ["/gopath/app/team-3GGS/mate-go/bin/main"]
