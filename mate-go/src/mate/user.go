@@ -1,4 +1,4 @@
-package example
+package  mate
 
 import (
 	"fmt"
@@ -12,6 +12,15 @@ type UserREST struct {
 func (this *UserREST) Login(c *hera.Context) error {
 	params := c.Params
 	phone_number :=  params["phone_number"]
+	
+	fmt.Println("[info] sadd  userid , value: "+ phone_number )
+
+	//todo  add user info
+
+	_ , err :=hera.Redis.DoCmd("sadd", "userid", phone_number)
+	if err != nil {
+		fmt.Println("[warn] sadd  userid error, value: "+ phone_number )
+	}
 
 	return c.Success("phone_number : " + phone_number)
 }
