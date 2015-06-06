@@ -1,5 +1,5 @@
 !<arch>
-__.PKGDEF       0           0     0     644     75174     `
+__.PKGDEF       0           0     0     644     75170     `
 go object darwin amd64 go1.4.2 X:precisestack
 
 $$
@@ -472,7 +472,7 @@ package hera
 	func (@"".thisÂ·3 *@"".RedisSvc) DoCmd (@"".cmdÂ·4 string, @"".argsÂ·5 ...interface {}) (? interface {}, ? error)
 	func (@"".thisÂ·2 *@"".RedisSvc) @"".getRedisPool () (? @"github.com/garyburd/redigo/redis".Conn)
 	var @"".Redis *@"".RedisSvc
-	func @"".NewRedisSvc () { @"".Redis = (&@"".RedisSvc{ @"".connType:"tcp", @"".ip:"192.168.1.182", @"".port:"6379", @"".db:"1" }) }
+	func @"".NewRedisSvc () { @"".Redis = (&@"".RedisSvc{ @"".connType:"tcp", @"".ip:"127.0.0.1", @"".port:"6379", @"".db:"1" }) }
 	func @"".String (@"".replyÂ·3 interface {}, @"".errÂ·4 error "esc:0x4") (? string, ? error)
 	type @"".ResponseWriter interface { Before(? func(? @"".ResponseWriter)); Flush(); Header() (? @"net/http".Header); Size() (? int); Status() (? int); Write(? []byte) (? int, ? error); WriteHeader(? int); Written() (? bool) }
 	func @"".NewResponseWriter (@"".rwÂ·2 @"net/http".ResponseWriter) (? @"".ResponseWriter) { return (&@"".responseWriter{ ResponseWriter:@"".rwÂ·2, @"".status:0x0, @"".size:0x0, @"".beforeFuncs:nil }) }
@@ -639,7 +639,7 @@ package hera
 	var @"".r *@"".Router
 
 $$
-_go_.6          0           0     0     644     289667    `
+_go_.6          0           0     0     644     289651    `
 go object darwin amd64 go1.4.2 X:precisestack
 
 !
@@ -742,7 +742,7 @@ d	D  D¦¢V TgclocalsÂ·ca1ebfc68aaed1d083688775167e5178 TgclocalsÂ·0
 "".rw 8type.net/http.ResponseWriter "".rec  "type.*"".Recovery &`=6_`
 _ ° 0K' 
  YW TgclocalsÂ·858708abd8e4b1564c144eac0d21fe82 TgclocalsÂ·2a7737f71869bef88673f340016ac100   h/Users/zy/dev/team-3GGS/mate-go/src/hera/recovery.goş"".NewRedisSvc  à  ÌeH‹%    H;awè    ëêHƒìH    H‰$è    H‹D$Hƒø tmH(H    H‰ïH‰ŞH¥H¥HhH    H‰ïH‰ŞH¥H¥Hh H    H‰ïH‰ŞH¥H¥Hh0H    H‰ïH‰ŞH¥H¥H    H‰$H‰D$è    HƒÄÃ‰ ë
-         0runtime.morestack_noctxt   :   type."".RedisSvc   L  "runtime.newobject   v  go.string."tcp"      2go.string."192.168.1.182"   Ê   go.string."6379"   ô  go.string."1"   –  "".Redis   ²  .runtime.writebarrierptr         ‡  ° *
+         0runtime.morestack_noctxt   :   type."".RedisSvc   L  "runtime.newobject   v  go.string."tcp"      *go.string."127.0.0.1"   Ê   go.string."6379"   ô  go.string."1"   –  "".Redis   ²  .runtime.writebarrierptr         ‡  ° *
 n  %‹ TgclocalsÂ·3280bececceccd33cb74587feedb1f9f TgclocalsÂ·3280bececceccd33cb74587feedb1f9f   b/Users/zy/dev/team-3GGS/mate-go/src/hera/redis.goş6"".(*RedisSvc).getRedisPool  À  ¾eH‹%    H;awè    ëêHƒì0H    H‰$è    H‹D$H‰D$(H‹l$8H‰(HÇD$@    HÇD$H    H‹    1íH9ë…î   H    H‰$è    H‹L$H‰ÏHƒù „  1Àè    HÇAè  H‰L$ H½ `á7   H‰i H    H‰$è    H‹D$H-    H‰(H‰D$H‰$Hƒ<$ „µ   Hƒ$H‹\$(H‰\$è    H‹\$ H‰$Hƒ<$ „   H‹\$H‰\$è    H‹\$ H‰$Hƒ<$ tYHƒ$H    H‰\$è    H    H‰$H‹\$ H‰\$è    H‹    H‰$è    H‹L$H‹D$H‰L$@H‰D$HHƒÄ0Ã‰%    ë‰%    ésÿÿÿ‰%    é?ÿÿÿ‰éãşÿÿ&
          0runtime.morestack_noctxt   :  "type.*"".RedisSvc   L  "runtime.newobject   ¢  $"".redisConnection   Æ  Ttype.github.com/garyburd/redigo/redis.Pool   Ø  "runtime.newobject   ŠÀ  runtime.duffzero   Î  Vtype.struct { F uintptr; A0 **"".RedisSvc }   à  "runtime.newobject   ø  "".funcÂ·004   Î  .runtime.writebarrierptr   ”  .runtime.writebarrierptr   Ì  "".funcÂ·005Â·f   à  .runtime.writebarrierptr   î  $"".redisConnection   ”  .runtime.writebarrierptr   ¢  $"".redisConnection   ´  Xgithub.com/garyburd/redigo/redis.(*Pool).Get   0`  "".autotmp_0195 /Xtype.*struct { F uintptr; A0 **"".RedisSvc } "".autotmp_0194 Vtype.*github.com/garyburd/redigo/redis.Pool "".&this $type.**"".RedisSvc "".~r0 Ttype.github.com/garyburd/redigo/redis.Conn `Ü_`)   *<NDGI)  %FD7#@W TgclocalsÂ·b46c7a32cd3cbdb99d262657bbb5cb46 TgclocalsÂ·cdc4991f2e08ab0e53ef4d9069c3575a   b/Users/zy/dev/team-3GGS/mate-go/src/hera/redis.goş"".String  À  ºeH‹%    H;awè    ëêHƒì@HÇD$h    HÇD$p    HÇD$x    HÇ„$€       H‹\$HH‰$H‹\$PH‰\$H‹\$XH‰\$H‹\$`H‰\$è    H‹l$ H‹T$(H‹L$0H‹D$8H‰l$hH‰T$pH‰L$xH‰„$€   HƒÄ@Ã
          0runtime.morestack_noctxt   Ò  Ngithub.com/garyburd/redigo/redis.String   €€  "".~r3 `type.error "".~r2 @type.string "".err  type.error "".reply  "type.interface {} €‚   
@@ -965,7 +965,7 @@ hA_ 
     ş2go.string."Started %s %s" @  <               Started %s %s    2go.string."Started %s %s"   şBgo.string."Completed %v %s in %v" P  L               Completed %v %s in %v    Bgo.string."Completed %v %s in %v"   şTgclocalsÂ·83042d34f8782f2d227ed78e798f6711      4             P
 ÿ     Pÿ     P    ° P                ÿ      ÿ  şTgclocalsÂ·591329d291f7d73324d2674a48868ab3 P  P   
    ®  ®  ®  ®  ®  ®  ®  ®   şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·a7a3692b8e27e823add69ec4239ba55f              şTgclocalsÂ·2a7737f71869bef88673f340016ac100               )    şTgclocalsÂ·858708abd8e4b1564c144eac0d21fe82        
-   ®  ®   şgo.string."tcp" 0  (               tcp    go.string."tcp"   ş2go.string."192.168.1.182" @  <               192.168.1.182    2go.string."192.168.1.182"   ş go.string."6379" 0  *               6379     go.string."6379"   şgo.string."1" 0  $               1    go.string."1"   şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·cdc4991f2e08ab0e53ef4d9069c3575a 8  8              (   
+   ®  ®   şgo.string."tcp" 0  (               tcp    go.string."tcp"   ş*go.string."127.0.0.1" @  4        	       127.0.0.1    *go.string."127.0.0.1"   ş go.string."6379" 0  *               6379     go.string."6379"   şgo.string."1" 0  $               1    go.string."1"   şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·cdc4991f2e08ab0e53ef4d9069c3575a 8  8              (   
        şTgclocalsÂ·b46c7a32cd3cbdb99d262657bbb5cb46 8  8                      şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·690ba8f03809daa174c74c46e608186b         ¿    ş"go.string."%s:%s" 0  ,               %s:%s    "go.string."%s:%s"   ş$go.string."SELECT" 0  .               SELECT    $go.string."SELECT"   şTgclocalsÂ·969c64ec704104d938d7eccb8106f0ae €  €   "                      ü      ü                         şTgclocalsÂ·63fef43fa7ad3bc201e6df1bb704a525 H  H      Š   Šğ Šğ Šğ Šğ Š   Š    şTgclocalsÂ·e1ae6533a9e39048ba0735a2264ce16a                   şTgclocalsÂ·3873aede0e2b4d1c469235ed370ff191                  şTgclocalsÂ·d64e51a4c4bfeaa840e480961ec6b0b3              şTgclocalsÂ·cd30d2bcfdea04ed7c49639580b4bd08             şTgclocalsÂ·d64e51a4c4bfeaa840e480961ec6b0b3              şTgclocalsÂ·9877a4ef732a0f966b889793f9b99b87         
     şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·06cab038d51064a089bda21fa03e00f7             şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·06cab038d51064a089bda21fa03e00f7             şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·06cab038d51064a089bda21fa03e00f7             şTgclocalsÂ·03f1d46283bce2f18c21fd6ee09723e1 (  (                 şTgclocalsÂ·c70b15b9f2d08c884d2a5c6874723195 (  (      
    
