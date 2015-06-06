@@ -6,3 +6,5 @@ echo $GOBIN
 
 go get github.com/garyburd/redigo/redis
 go install main
+
+exec "$@"
