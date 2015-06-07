@@ -7,7 +7,7 @@ import (
 type UserREST struct {
 }
 
-//curl 'localhost:8083/Hello/Get?fd=123'
+//curl 'localhost:8083/User/Login?phone_number=123'
 func (this *UserREST) Login(c *hera.Context) error {
 	params := c.Params
 	phone_number :=  params["phone_number"]
@@ -20,10 +20,14 @@ func (this *UserREST) Login(c *hera.Context) error {
 		hera.Logger.Warn("sadd  userid error, value: "+ phone_number)
 	}
 
-	return c.Success("phone_number : " + phone_number)
+	data := make(map[string]interface{})
+	data["phone_number"] = phone_number	
+	data["auth_code"] = IdentifyCode()
+
+	return c.Success(data)
 }
 
-//curl 'localhost:8083/Hello/Set?fd=123'
+//curl 'localhost:8083/User/MateList?phone_number=123'
 func (this *UserREST) MateList(c *hera.Context) error {
 	params := c.Params
 	phone_number :=  params["phone_number"]
@@ -34,6 +38,7 @@ func (this *UserREST) MateList(c *hera.Context) error {
 	return c.Success(ret)
 }
 
+//curl 'localhost:8083/User/MatedList?phone_number=123'
 func (this *UserREST) MatedList(c *hera.Context) error {
 	params := c.Params
 	phone_number :=  params["phone_number"]
@@ -47,7 +52,7 @@ func (this *UserREST) MatedList(c *hera.Context) error {
 	return c.Success(ret)
 }
 
-//curl 'localhost:8083/Hello/Set?fd=123'
+//curl 'localhost:8083/User/Like?phone_number=123&like_id=12312'
 func (this *UserREST) Like(c *hera.Context) error {
 	params := c.Params
 	phone_number :=  params["phone_number"]
@@ -62,6 +67,7 @@ func (this *UserREST) Like(c *hera.Context) error {
 	return c.Success("phone_number : " + phone_number)
 }
 
+//curl 'localhost:8083/User/Unlike?phone_number=123&like_id=12312'
 func (this *UserREST) Unlike(c *hera.Context) error {
 	params := c.Params
 	phone_number :=  params["phone_number"]
@@ -78,15 +84,4 @@ func (this *UserREST) Unlike(c *hera.Context) error {
 func init() {
 	hera.NewRouter().AddRouter(&UserREST{})
 }
-
-
-//login
-
-//getmatelist
-
-//nosure
-
-//sure
-
-
 

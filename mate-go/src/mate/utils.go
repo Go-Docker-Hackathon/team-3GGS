@@ -13,7 +13,7 @@ import (
 
 func IdentifyCode() int {
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
-	return r.Intn(100)
+	return r.Intn(10000)
 }
 
 func CurlFunc(url string) (ret hera.ReturnValue) {
