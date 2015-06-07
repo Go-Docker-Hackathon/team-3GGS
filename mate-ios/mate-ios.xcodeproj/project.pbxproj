@@ -28,6 +28,8 @@
 		566A3B591B23167E002FBE31 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 566A3B4C1B23167E002FBE31 /* ASIInputStream.m */; };
 		566A3B5A1B23167E002FBE31 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 566A3B4E1B23167E002FBE31 /* ASINetworkQueue.m */; };
 		566A3B5B1B23167E002FBE31 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 566A3B521B23167E002FBE31 /* Reachability.m */; };
+		566A3B631B23CEF9002FBE31 /* LikeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566A3B611B23CEF9002FBE31 /* LikeListViewController.m */; };
+		566A3B641B23CEF9002FBE31 /* LikeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 566A3B621B23CEF9002FBE31 /* LikeListViewController.xib */; };
 		568285F31B22AF5800152BFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568285F21B22AF5800152BFA /* Foundation.framework */; };
 		568285F51B22AF5800152BFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568285F41B22AF5800152BFA /* CoreGraphics.framework */; };
 		568285F71B22AF5800152BFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568285F61B22AF5800152BFA /* UIKit.framework */; };
@@ -97,6 +99,9 @@
 		566A3B4F1B23167E002FBE31 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
 		566A3B511B23167E002FBE31 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		566A3B521B23167E002FBE31 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		566A3B601B23CEF9002FBE31 /* LikeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeListViewController.h; sourceTree = "<group>"; };
+		566A3B611B23CEF9002FBE31 /* LikeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeListViewController.m; sourceTree = "<group>"; };
+		566A3B621B23CEF9002FBE31 /* LikeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LikeListViewController.xib; sourceTree = "<group>"; };
 		568285EF1B22AF5800152BFA /* mate-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mate-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		568285F21B22AF5800152BFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		568285F41B22AF5800152BFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -242,6 +247,9 @@
 		568285F81B22AF5800152BFA /* mate-ios */ = {
 			isa = PBXGroup;
 			children = (
+				566A3B601B23CEF9002FBE31 /* LikeListViewController.h */,
+				566A3B611B23CEF9002FBE31 /* LikeListViewController.m */,
+				566A3B621B23CEF9002FBE31 /* LikeListViewController.xib */,
 				5642D2561B22F6E200DC206C /* MateViewController.h */,
 				5642D2571B22F6E200DC206C /* MateViewController.m */,
 				5642D2581B22F6E200DC206C /* MateViewController.xib */,
@@ -366,6 +374,7 @@
 				568285FD1B22AF5800152BFA /* InfoPlist.strings in Resources */,
 				568286061B22AF5800152BFA /* Main.storyboard in Resources */,
 				5642D25A1B22F6E200DC206C /* MateViewController.xib in Resources */,
+				566A3B641B23CEF9002FBE31 /* LikeListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +408,7 @@
 				566A3B541B23167E002FBE31 /* ASIDataCompressor.m in Sources */,
 				568285FF1B22AF5800152BFA /* main.m in Sources */,
 				566A3B571B23167E002FBE31 /* ASIFormDataRequest.m in Sources */,
+				566A3B631B23CEF9002FBE31 /* LikeListViewController.m in Sources */,
 				566A3B351B231553002FBE31 /* SBJsonParser.m in Sources */,
 				566A3B321B231553002FBE31 /* NSString+SBJSON.m in Sources */,
 				568286031B22AF5800152BFA /* xcodecraftAppDelegate.m in Sources */,

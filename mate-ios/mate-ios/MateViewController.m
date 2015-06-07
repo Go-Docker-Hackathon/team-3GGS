@@ -11,6 +11,7 @@
 
 @interface MateViewController ()
 - (IBAction)MateListViewController:(id)sender;
+- (IBAction)LikeList:(id)sender;
 
 @end
 
@@ -47,6 +48,20 @@
         NSString *response = [request responseString];
         NSLog(response);
         [[[UIAlertView alloc]initWithTitle:@"与你想Mate的用户列表" message:response delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil]show];
+    }
+    
+}
+
+- (IBAction)LikeList:(id)sender {
+
+    NSURL *url = [NSURL URLWithString:@"http://3ggs-mate.daoapp.io/User/MatedList?phone_number=13811229996"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request startSynchronous];
+    NSError *error = [request error];
+    if (!error) {
+        NSString *response = [request responseString];
+        NSLog(response);
+        [[[UIAlertView alloc]initWithTitle:@"你Mate过的用户列表" message:response delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil]show];
     }
     
 }
