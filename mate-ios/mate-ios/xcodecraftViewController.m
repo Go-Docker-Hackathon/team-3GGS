@@ -33,7 +33,7 @@
     
     // [[[UIAlertView alloc]initWithTitle:@"title" message:@"登录成功" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil]show];
     
-    NSURL *url = [NSURL URLWithString:@"http://localhost:8083/Hello/Get?fd=123'"];
+    NSURL *url = [NSURL URLWithString:@"http://3ggs-mate.daoapp.io/User/Login?phone_number=13811229996"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request startSynchronous];
     NSError *error = [request error];
