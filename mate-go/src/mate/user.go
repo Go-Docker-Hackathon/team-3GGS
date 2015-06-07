@@ -64,7 +64,7 @@ func (this *UserREST) Like(c *hera.Context) error {
 	if err != nil {
 		hera.Logger.Warn("sadd like_"+ phone_number + " " + like_id)
 	}
-	return c.Success("phone_number : " + phone_number)
+	return c.Success()
 }
 
 //curl 'localhost:8083/User/Unlike?phone_number=123&like_id=12312'
@@ -78,7 +78,7 @@ func (this *UserREST) Unlike(c *hera.Context) error {
 	if err != nil {
 		hera.Logger.Warn("sadd unlike_"+ phone_number + " " + like_id)
 	}
-	return c.Success("phone_number : " + phone_number)
+	return c.Success()
 }
 
 func init() {
