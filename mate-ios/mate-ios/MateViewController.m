@@ -46,7 +46,7 @@
     if (!error) {
         NSString *response = [request responseString];
         NSLog(response);
-        //[[[UIAlertView alloc]initWithTitle:@"title" message:@"登录成功" delegate:nil cancelButtonTitle:response otherButtonTitles:nil, nil]show];
+        [[[UIAlertView alloc]initWithTitle:@"与你想Mate的用户列表" message:response delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil]show];
     }
     
 }
