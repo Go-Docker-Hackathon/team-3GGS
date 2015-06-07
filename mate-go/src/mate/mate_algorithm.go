@@ -11,7 +11,7 @@ func MatchAlgorithm(phone_number string)  []string {
 		hera.Logger.Warn("sunionstore tmp like_"+ phone_number + " unlike_"+ phone_number)
 	}
 
-	ret , err :=hera.Strings(hera.Redis.DoCmd("sdiff", "tmp", "userid"))
+	ret , err :=hera.Strings(hera.Redis.DoCmd("sdiff", "userid", "tmp"))
 	if err != nil {
 		hera.Logger.Warn("sdiff tmp userid")
 	}
